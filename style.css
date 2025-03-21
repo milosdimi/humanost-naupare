@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.philosopher-regular {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.philosopher-bold {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+body {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+}
+/* header */
+.header-bg {
+    background-image: url('./img/slika1.jpg'); /* замени са твојом сликом */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.animate-header {
+    animation: fadeInDown 1s ease-in;
+}
+
+.animate-subheader {
+    animation: fadeInUp 1s ease-in 0.3s;
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
