@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
     font-style: normal;
 }
 .navbar-brand img {
-    height: 40px;
+    height: 100px;
     width: auto;
 }
 /* header */
@@ -32,8 +32,37 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 50vh; /* висина 50% екрана */
+    position: relative; /* за позиционирање садржаја */
 }
 
+/* Прозирна навигација са градијентом */
+.transparent-nav {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute; /* да остане на врху */
+    top: 0; /* при врху хедера */
+    width: 100%; /* пуна ширина */
+}
+
+/* Боја текста у навигацији */
+.transparent-nav .nav-link {
+    color: white !important;
+}
+
+.transparent-nav .nav-link:hover {
+    color: #ddd !important;
+}
+
+/* Садржај хедера */
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* центрирање вертикално и хоризонтално */
+    width: 100%;
+}
+
+/* Анимације */
 .animate-header {
     animation: fadeInDown 1s ease-in;
 }
@@ -51,4 +80,3 @@ h1, h2, h3, h4, h5, h6 {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
-
